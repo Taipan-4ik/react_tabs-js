@@ -13,7 +13,7 @@ export const tabs = [
 export const App = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
   const findTabOnId = newId => {
-    return setSelectedTab(tabs.find(tab => tab.id === newId));
+    setSelectedTab(tabs.find(tab => tab.id === newId));
   };
 
   return (
@@ -38,9 +38,3 @@ export const App = () => {
     </div>
   );
 };
-
-/* <li className="is-active" data-cy="Tab">
-  <a href="#tab-3" data-cy="TabLink">
-    Tab 3
-  </a>
-</li>; */
